@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title >Car Price prediction</title>
+        <style>
+
+            body {
+            margin: 0;
+            padding: 0;
+            
+            background-image: url('https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/27163/Lamborghini-Car-Dark-Black-Awesome-iphone-8-wallpaper-ilikewallpaper_com.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative
+            }
+
+            
+            
+input[type=number], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color:#031b2c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #072431;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label{
+  color:white;
+}
+
+h2{
+  color:white
+
+}
+
+
+            
+        </style>
+    </head>
+     <body>
+
+     <center>
+        
+            <h2 >ENTER CAR DETAILS</h2>
+            <br>
+            <form method="POST" action="/input">
+                <label for="yr"><b>ENTER THE CAR MODELS YEAR </b> </label><br>
+                <input id = "yr" type="text" name="yr" placeholder="Enter the car models year" required><br><br>
+                
+                <label for="km"><b>ENTER THE KM DRIVEN </b> </label><br>
+                <input id = "km" type="text" name="km" placeholder="Enter the km driven" required><br><br>
+                
+                <label for="fuel"><b>SELECT THE FUEL TYPE </b> </label>
+                <br>
+                <select name="fuel">
+                    
+                    <option value=0>CNG</option>
+                    <option value=1>Petrol</option>
+                    <option value=2>LPG</option>
+                    <option value=3>Diesel</option>
+                    
+                    
+                </select>
+               <br><br>
+                <label for="seller"><b>SELECT THE SELLER TYPE </b> </label>
+                <br>
+                    <select name="seller">
+                    <option value=0>Dealer</option>
+                    <option value=1>Individual</option>
+                    <option value=2>Trustmark Dealer</option>
+                    
+                </select><br><br>
+
+                <label for="trans"><b>SELECT THE TRANSMISSION TYPE </b> </label>
+                <br>
+                    <select name="trans">
+                    <option value=0>Automatic</option>
+                    <option value=1>Manual</option>
+                    
+                    
+                </select><br><br>
+
+
+                <label for="owner"><b>SELECT THE OWNER TYPE </b> </label>
+                <br>
+                    <select name="owner">
+                    <option value=0>First Owner</option>
+                    <option value=1>Second Owner</option>
+                    <option value=2>Third Owner</option>
+                    <option value=3>Fourth & Above Owner</option>
+                    <option value=4>Test Drive Car</option>
+                    
+                </select><br><br>
+
+
+
+                <label for="mileage"><b>ENTER THE MILEAGE </b> </label><br>
+                <input id = "mileage" type="text" name="mileage" placeholder="Enter the mileage"  required><br><br> 
+                <label for="engine"><b>ENTER THE ENGINE</b>  </label><br>
+                <input id = "engine" type="text" name="engine" placeholder="Enter the engine"  required>
+                <br><br>
+                <label for="power"><b>ENTER THE MAXPOWER</b>  </label><br>
+                <input id = "power" type="text" name="power" placeholder="Enter the maxpower"  required>
+                <br><br>
+                
+                    
+                <label for="seats"><b>ENTER THE NO OF SEATS</b>  </label><br>
+                <input id = "seats" type="text" name="seats" placeholder="Enter the no of seats"  required>
+                <br><br>
+
+                <input type="submit" value="SUBMIT">
+
+                
+            </form>
+        </center>
+    </body>
+</html>
